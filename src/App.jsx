@@ -253,8 +253,8 @@ export default function App() {
   }
 
   return (
-    <div className={`min-h-screen ${isBreak ? 'bg-green-100' : 'bg-blue-50'} p-6 overflow-y-auto`}>  
-      <div className="bg-white rounded-3xl shadow-xl p-6 md:p-10 flex flex-col md:flex-row gap-6 md:gap-10 items-start w-full max-w-7xl">
+    <div className={`min-h-screen ${isBreak ? 'bg-green-100' : 'bg-blue-50'} flex items-center justify-center px-4 py-8`}> 
+      <div className="bg-white rounded-3xl shadow-xl p-6 md:p-10 flex flex-col md:flex-row gap-6 md:gap-10 items-start w-full max-w-7xl overflow-y-auto">
       <div className="text-center w-full md:w-1/2">
           <h1 className="text-3xl font-bold mb-6">
             {isBreak ? "Break Time!" : "Pomodoro Buddy"}
