@@ -37,7 +37,8 @@ export default function App() {
   }, [darkMode]);
   
 
-  const socket = useMemo(() => io('http://localhost:4000'), []);
+  const socket = useMemo(() => io(import.meta.env.VITE_BACKEND_URL), []);
+
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
